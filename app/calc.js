@@ -40,7 +40,7 @@ for (var i = 0; i < keys.length; i++) {
 				input.innerHTML += btnVal;
 			}
 
-			if(operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
+			if (operators.indexOf(lastChar) > -1 && inputVal.length > 1) {
 				input.innerHTML = inputVal.replace(/.$/, btnVal);
 			}
 			
