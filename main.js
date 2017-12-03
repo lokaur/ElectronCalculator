@@ -1,7 +1,6 @@
 const electron = require('electron')
 const app = electron.app
 const BrowserWindow = electron.BrowserWindow
-
 const path = require('path')
 const url = require('url')
 
@@ -21,7 +20,10 @@ function createWindow () {
   })
 }
 
-app.on('ready', createWindow)
+app.on('ready', function () {
+  createWindow()
+  require('./app/shortcuts.js')
+})
 
 app.on('window-all-closed', function () {
   if (process.platform !== 'darwin') {
