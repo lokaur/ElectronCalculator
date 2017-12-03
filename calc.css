@@ -1,0 +1,110 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font: bold 14px Arial, sans-serif;
+}
+
+#calculator {
+	max-width: 325px;
+	height: auto;
+	padding: 20px;
+}
+
+.top span.clear {
+	float: left;
+}
+
+.top .screen {
+	height: 40px;
+	width: 212px;
+	float: right;
+	padding: 0 10px;
+	background: rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+	font-size: 17px;
+	line-height: 40px;
+	color: white;
+	text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	text-align: right;
+	letter-spacing: 1px;
+}
+
+.keys, .top {
+	overflow: hidden;
+}
+
+.keys span, .top span.clear {
+	float: left;
+	position: relative;
+	top: 0;
+	cursor: pointer;
+	width: 66px;
+	height: 40px;
+	background: #2196F3;
+	margin: 0 7px 11px 0;
+	color: white;
+	line-height: 40px;
+	text-align: center;
+	-webkit-user-select: none;
+	user-select: none;
+	transition: all 0.2s ease;
+}
+
+span.operator {
+	margin-right: 0;
+}
+
+.keys span.operator {
+	background: #1DE9B6;
+	margin-right: 0;
+}
+
+.keys span.eval {
+	background: #1DE9B6;
+}
+
+.top span.clear {
+	background: #F44336;
+	color: white;
+}
+
+.keys span:hover {
+	background: #64B5F6;
+	box-shadow: 0px 2px #2196F3;
+	color: white;
+}
+
+.keys span.operator:hover {
+	background: #26A69A;
+	box-shadow: 0px 2px #1DE9B6;
+	color: #ffffff;
+}
+
+.keys span.eval:hover {
+	background: #26A69A;
+	box-shadow: 0px 2px #1DE9B6;
+	color: #ffffff;
+}
+
+.top span.clear:hover {
+	background: #f68991;
+	box-shadow: 0px 2px #d3545d;
+	color: white;
+}
+
+.keys span:active {
+	box-shadow: 0px 0px #6b54d3;
+	top: 4px;
+}
+
+.keys span.eval:active {
+	box-shadow: 0px 0px #717a3;
+	top: 4px;
+}
+
+.top span.clear:active {
+	box-shadow: 0px 0px #d3545d;
+	top: 4px;
+}
